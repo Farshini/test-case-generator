@@ -1,0 +1,77 @@
+:root {
+  /* Sidebar / shell */
+  --color-sidebar-bg: #14161f;
+  --color-sidebar-icon: #8b8fa3;
+  --color-sidebar-icon-hover: #ffffff;
+  --color-accent: #e0357f;
+  --color-accent-dark: #c22a6b;
+  --color-gradient-start: #8b5cf6;
+  --color-gradient-mid: #ec4899;
+  --color-gradient-end: #22d3ee;
+
+  /* Surface */
+  --color-bg: #f7f7f9;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-border-strong: #d1d5db;
+
+  /* Text */
+  --color-text-primary: #1a1d29;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+  --color-text-on-dark: #ffffff;
+
+  /* Status */
+  --color-success-bg: #dcfce7;
+  --color-success-text: #16a34a;
+  --color-warning-bg: #fef3c7;
+  --color-warning-text: #b45309;
+  --color-danger: #dc2626;
+  --color-danger-bg: #fee2e2;
+
+  /* Category badges */
+  --color-positive: #16a34a;
+  --color-positive-bg: #dcfce7;
+  --color-negative: #dc2626;
+  --color-negative-bg: #fee2e2;
+  --color-edge: #d97706;
+  --color-edge-bg: #fef3c7;
+  --color-validation: #2563eb;
+  --color-validation-bg: #dbeafe;
+
+  /* Priority */
+  --color-priority-high: #dc2626;
+  --color-priority-medium: #d97706;
+  --color-priority-low: #6b7280;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-card: 0 1px 2px rgba(16, 17, 22, 0.04), 0 1px 8px rgba(16, 17, 22, 0.06);
+  --shadow-float: 0 8px 24px rgba(16, 17, 22, 0.14);
+
+  --sidebar-width: 64px;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-bg: #0f1015;
+    --color-surface: #1a1c24;
+    --color-border: #2b2e3a;
+    --color-border-strong: #383c4a;
+    --color-text-primary: #f1f2f6;
+    --color-text-secondary: #a4a8b8;
+    --color-text-muted: #71758a;
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #0f1015;
+  --color-surface: #1a1c24;
+  --color-border: #2b2e3a;
+  --color-border-strong: #383c4a;
+  --color-text-primary: #f1f2f6;
+  --color-text-secondary: #a4a8b8;
+  --color-text-muted: #71758a;
+}

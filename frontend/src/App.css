@@ -1,0 +1,103 @@
+@import './styles/shared.css';
+
+.app-shell {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+}
+
+.app-scroll {
+  flex: 1;
+  overflow-y: auto;
+  background: linear-gradient(
+    160deg,
+    var(--color-bg) 0%,
+    var(--color-bg) 55%,
+    rgba(139, 92, 246, 0.06) 78%,
+    rgba(34, 211, 238, 0.08) 100%
+  );
+}
+
+.app-scroll__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.app-welcome {
+  align-self: center;
+  text-align: center;
+  max-width: 480px;
+  margin: 40px 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.app-welcome__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    var(--color-gradient-start),
+    var(--color-gradient-mid) 55%,
+    var(--color-gradient-end)
+  );
+}
+
+.app-welcome h1 {
+  font-size: 19px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.app-welcome p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.app-retry-card {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.app-retry-card p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 640px) {
+  .app-scroll__inner {
+    padding: 20px 14px 40px;
+  }
+  .app-welcome {
+    margin: 20px 0 4px;
+  }
+  .app-welcome h1 {
+    font-size: 16px;
+  }
+}

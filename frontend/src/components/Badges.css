@@ -1,0 +1,54 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.badge--category-positive {
+  background: var(--color-positive-bg);
+  color: var(--color-positive);
+}
+
+.badge--category-negative {
+  background: var(--color-negative-bg);
+  color: var(--color-negative);
+}
+
+.badge--category-edge_case {
+  background: var(--color-edge-bg);
+  color: var(--color-edge);
+}
+
+.badge--category-validation {
+  background: var(--color-validation-bg);
+  color: var(--color-validation);
+}
+
+.badge--priority-high {
+  background: var(--color-negative-bg);
+  color: var(--color-priority-high);
+}
+
+.badge--priority-medium {
+  background: var(--color-edge-bg);
+  color: var(--color-priority-medium);
+}
+
+.badge--priority-low {
+  background: #f1f2f6;
+  color: var(--color-priority-low);
+}
+
+.badge--status-saved {
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+}
+
+.badge--status-draft {
+  background: #f1f2f6;
+  color: var(--color-text-secondary);
+}

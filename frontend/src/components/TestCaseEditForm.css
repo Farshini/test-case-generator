@@ -1,0 +1,61 @@
+.test-case-edit-form {
+  padding: 14px 16px 16px;
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  margin: 0 16px 12px;
+}
+
+.test-case-edit-form__label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 10px 0 4px;
+}
+
+.test-case-edit-form__input,
+.test-case-edit-form__select,
+.test-case-edit-form__textarea {
+  width: 100%;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+  font-size: 13px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  resize: vertical;
+}
+
+.test-case-edit-form__input:focus,
+.test-case-edit-form__select:focus,
+.test-case-edit-form__textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.test-case-edit-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.test-case-edit-form__error {
+  color: var(--color-danger);
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.test-case-edit-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+@media (max-width: 640px) {
+  .test-case-edit-form__row {
+    grid-template-columns: 1fr;
+  }
+}

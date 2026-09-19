@@ -1,0 +1,70 @@
+.sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  background: var(--color-sidebar-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  gap: 24px;
+}
+
+.sidebar__brand {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--color-gradient-start),
+    var(--color-gradient-mid) 55%,
+    var(--color-gradient-end)
+  );
+}
+
+.sidebar__brand-icon {
+  color: white;
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar__icon-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-sidebar-icon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sidebar__icon-button:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-sidebar-icon-hover);
+}
+
+.sidebar__icon-button--active,
+.sidebar__icon-button--active:hover {
+  background: var(--color-accent);
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    width: 52px;
+    min-width: 52px;
+  }
+  .sidebar__icon-button {
+    width: 34px;
+    height: 34px;
+  }
+}
